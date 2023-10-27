@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire cv</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="C:\Users\simpa\OneDrive\Bureau\CV-html\formulaire.css">
+</head>
+<body >
+    <div id="error"></div>
+    <form method="GET" action="result.html" id="form">
+        <h1>Formulaire de CV</h1>
+        <div class="separation"></div>
+        <div class="corps-formulaire">
+            <div class="gauche">
+                <h2>INFORMATIONS PERSONNELLES</h2>
+                <div class="groupe">
+                    <label for="name">Nom:</label>
+                    <input type="text" id="name" name="name" placeholder="Entrez un nom en majuscules"/>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="groupe">
+                    <label for="prenom">Prénom:</label>
+                    <input type="text" id="prenom" name="prenom">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="groupe">
+                    <label for="adresse">Adresse:</label>
+                    <input type="text" id="adresse" name="adresse">
+                </div>
+                <div class="groupe">
+                    <label for="date">ANNEE DE NAISSANCE:</label>
+                    <input type="text" id="date" name="date">
+                </div>
+                <div class="groupe">
+                    <label for="age">Age:</label>
+                    <input type="text" id="age" name="age">
+                    <i  class="fa-solid fa-calendar-days"></i>
+                </div>
+                <div class="groupe">
+                    <label for="email">E-mail:</label>
+                    <input type="text" id="email" name="email" >
+                    <i class="fa-solid fa-square-envelope"></i>
+                </div>
+                <div class="groupe">
+                    <label for="situation">Marié ou célibataire?</label>  
+                    <input type="radio" name="situation" value="marie"> Marié <input type="radio" name="situation" value="celibataire">célibataire
+                </div>
+                <h2>TITTRE DU CV</h2>
+                <div class="groupe">
+                    <label for="titre">Titre:</label>
+                    <input type="text" id="titre" name="titre" size="100">
+                </div>
+                <h2>COMPETENCES TECHNIQUES</h2>
+                <div class="groupe" id="competence">
+                    <label for="competence">Quelles sont vos competences techniques?</label>
+                    <input type="checkbox" name="competence1" value="oui">Programmation en C<br>
+                    <input type="checkbox" name="competence2" value="oui">wordpress,Canva<br>  
+                    <input type="checkbox" name="competence3" value="oui">SQL Database<br> 
+                    <input type="checkbox" name="competence4" value="oui">Informatique Bureautique<br>
+                </div>
+                <h2>COMPETENCES LINGUSTIQUES</h2>
+                <div class="groupe">
+                    <input type="checkbox" name="competencel1" value="oui">Anglais<br>
+                    <input type="checkbox" name="competencel2" value="oui">Français<br>
+                    <input type="checkbox" name="competencel3" value="oui">
+                    <label for="autre">Autre:</label>
+                    <input type="text" name="autre" size="20">
+                    <br>
+                </div>
+                <h2>LOISIRS</h2>
+                <div class="groupe">
+                    <input type="checkbox" name="loisir1" value="oui">Sport<br>
+                    <input type="checkbox" name="loisir2" value="oui">Lecture<br>  
+                    <input type="checkbox" name="loisir3" value="oui">Benevolat<br> 
+                    <input type="checkbox" name="loisir4" value="oui">
+                    <label for="loisirautre">Autre:</label> 
+                    <input type="text" name="loisirautre" size="20">
+                </div>
+            </div>   
+            <div class="droite">
+                <h2>OBJECTIF PROFESSIONNEL</h2>
+                <div class="groupe">
+                    <label for="objectif_professionnel">Objectif professionnel:</label> <br>
+                    <textarea name="objectif_professionnel" cols="60" rows="33.5" ></textarea>      
+                </div>
+                <h2>FORMATIONS ET DIPLÔMES</h2>
+                <div class="groupe">
+                    <i>Quel est votre Dipolme?</i><br>
+                    <select name="diplome">
+                        <option value="DUT">DUT</option>
+                        <option value="Ingenieur">Ingenieur</option>
+                        <option value="Master">Master</option>
+                        <option value="Doctorat">Doctorat</option>
+                    </select>
+                </div>
+                <div class="groupe">
+                    <br>
+                    <label for="description">Description de la Formation:</label><br>
+                    <textarea name="description" cols="60" rows="34"></textarea>
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="pied-formulaire" align="center">
+            <button>SUBMIT</button>
+        </div>
+        <script src="main1.js"></script>
+
+    </form>
+    <br><br><br><br><br><br>
+    <br><br><br><br><br><br>
+    <section class="footer">
+        <footer>
+            <p>
+                Editer par: <b>SIMPARA Mohamed El Béchir</b>
+                <br>Copyright &copy 2023 du CV
+                <br>Dernière mise à jour:<b> 15 octobre 2023</b>
+            </p>
+            
+        </footer>
+    </section>
+    
+</body>
+</html>

@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #fef1df;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-10%,-10%);
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    background-image: url("formulaire.png");
+}
+form{
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+}
+form h1{
+    font-size: 40px;
+    text-align: center;
+    color: #747cdf;
+    text-justify: distribute;
+    font-style: italic;
+}
+form h2{
+    color: #747cdf;
+    font-style: italic;
+    font-size: x-large;
+}
+form .separation{
+    width: 100%;
+    height: 1px;
+    background-color: #747cdf;
+}
+form .corps-formulaire{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+form .corps-formulaire .groupe{
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+form .corps-formulaire .gauche .groupe input{
+    margin-top: 5px;
+    padding: 10px 5px 10px 20px;
+    border: 1px solid #c9c9c9;
+    outline-color: #747cdf;
+    width: 400px;
+    height: 15px;
+}
+form .corps-formulaire .gauche .groupe i{
+    position: absolute;
+    left: 0;
+    top: 25px;
+    padding: 9px 8px;
+    color: #747cdf;
+}
+form .corps-formulaire .droite{
+    margin-left: 600px;
+    text-align: right;
+    position: relative;
+    margin-right: 0px;
+    margin-top: -125%;
+}
+form .corps-formulaire .droite .groupe textarea{
+    margin-top: 5px;
+    padding: 10px;
+    background-color:#f8f8f8;
+    border: 2px solid #747cdf;
+    outline: none;
+    border-radius: 5px;
+    resize: none;
+    height: 72%; 
+}
+form .pied-formulaire button{
+    margin-top:10px;
+    background-color: #747cdf;
+    color: white;
+    font-size: 15px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    transition:transform 0.5s ;
+}
+form .pied-formulaire button:hover{
+    transform: scale(1.05);
+}
